@@ -25,7 +25,7 @@ public class ChangePasswordController {
     @FXML
     private TextField login;
 
-    public void switchToSceneGlavnaya(ActionEvent event) throws IOException {
+    public void switchToSceneMain(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("login-view.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -33,7 +33,7 @@ public class ChangePasswordController {
         stage.show();
     }
 
-    public void switchToSceneGlavnaya1(ActionEvent event) throws IOException, SQLException, ClassNotFoundException {
+    public void switchToSceneMain1(ActionEvent event) throws IOException, SQLException, ClassNotFoundException {
         test();
         String login = this.login.getText().trim();
         String oldPass = oldPassword.getText().trim();
